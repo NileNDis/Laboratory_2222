@@ -8,11 +8,11 @@ namespace _3_exercise
         {
             Console.WriteLine("Employee solution\n");
 
-            Employee denchik = new Employee("Denis", " Danilenko");
+            Employee den = new Employee("Denis", " Danilenko");
 
-            denchik.Rozrahunok();
+            den.Rozrahunok();
 
-            denchik.Write();
+            den.Write();
 
             Console.ReadKey();
         }

@@ -12,8 +12,8 @@ namespace _3_exercise
         private string last;
         private string pos;
         private int exp;
-        private int okl;
-        private int sbir = 20;
+        private int salary;
+        private int tax = 20;
 
         public Employee(string firstName, string lastName)
         {
@@ -25,21 +25,21 @@ namespace _3_exercise
         {
             if (pos == "junior" || pos == "Junior" && exp <= 1)
             {
-                okl = 1000;
+                salary = 1000;
             }
             else if (pos == "middle" || pos == "Middle" && exp <= 4 && 1 <= exp)
             {
-                okl = 3000;
+                salary = 3000;
             }
             else if (pos == "senior" || pos == "Senior" && 4 <= exp)
             {
-                okl = 5000;
+                salary = 5000;
             }
             else
             {
                 pos = "trainee";
                 exp = 0;
-                okl = 500;
+                salary = 500;
             }
         }
 
@@ -47,7 +47,7 @@ namespace _3_exercise
         public void Write()
         {
             Console.WriteLine($"Name: {first} \nLast Name: {last} \nPosition: {pos} \nExpirience: {exp} years" +
-                $" \nSalary: {okl}$ in nanosek \nTax collection: {sbir}%");
+                $" \nSalary: {salary}$ in nanosek \nTax collection: {tax}%");
         }
     }
     }
