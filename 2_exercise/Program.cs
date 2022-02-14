@@ -10,7 +10,7 @@ namespace _2_exercise
 
             Converter ezConverter = new Converter(28.5, 35.3, 0.332);
 
-            //Console.WriteLine($"This is: {grn_in_dol} in usd");
+            ezConverter.Conver();
 
             Console.ReadKey();
         }

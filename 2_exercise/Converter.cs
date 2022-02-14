@@ -15,9 +15,9 @@ namespace _2_exercise
 
         public Converter(double usdx, double eurx, double rubx)
         {
-            usd = usdx;
-            eur = eurx;
-            rub = rubx;
+            usdx = usd;
+            eurx = eur;
+            rubx = rub;
         }
 
         public void Conver()

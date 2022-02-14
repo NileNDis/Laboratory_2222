@@ -8,15 +8,20 @@ namespace _4_exercise
 {
     class User
     {
-        private string login = "QWERTY";
-        private string name = "Denches";
-        private string surname = "Danilenko";
-        private int age = 18;
-        private const string date = "11.02.2022";
+        public string login = "QWERTY";
+        public string name = "Denis";
+        public string surname = "Daninko";
+        public int age = 18;
+        public readonly DateTime date = DateTime.Now;
 
-        public void Vivod()
+
+        public User(string loginx, string namex, string surnamex, int agex)
         {
-            Console.WriteLine($"Login: {login};\nName: {name};\nSurname: {surname};\nAge: {age};\nDate: {date};");
+            loginx = login;
+            namex = name;
+            surnamex = surname;
+            agex = age;
         }
+     
     }
 }

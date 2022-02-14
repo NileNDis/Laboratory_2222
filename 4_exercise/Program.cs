@@ -8,9 +8,13 @@ namespace _4_exercise
         {
             Console.WriteLine("User solution\n");
 
-            User ezUser = new User();
+            User ezUser = new User("QWERTY", "Denches", "Danilenko", 18);
 
-            ezUser.Vivod();
+            Console.WriteLine(ezUser.login);
+            Console.WriteLine(ezUser.name);
+            Console.WriteLine(ezUser.surname);
+            Console.WriteLine(ezUser.age);
+            Console.WriteLine(ezUser.date);
 
             Console.ReadKey();
         }
