@@ -8,9 +8,9 @@ namespace _2_exercise
         {
             Console.WriteLine("Converter solution\n");
 
-            Converter ezConverter = new Converter(27, 30, 0.33);
+            Converter ezConverter = new Converter(28.5, 35.3, 0.332);
 
-            ezConverter.Choice();
+            //Console.WriteLine($"This is: {grn_in_dol} in usd");
 
             Console.ReadKey();
         }

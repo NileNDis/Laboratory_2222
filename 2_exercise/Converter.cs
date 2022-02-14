@@ -8,77 +8,62 @@ namespace _2_exercise
 {
     class Converter
     {
+        public double grn = 1000;
+        public double usd = 200;
+        public double eur = 500;
+        public double rub = 3000;
 
-        public double grn = 1;
-        public double usd = 27;
-        public double eur = 30;
-        public double rub = 0.33;
-
-        public  Converter(double usdx, double eurx, double rubx)
-            {
-                usd = usdx;
-                eur = eurx;
-                rub = rubx;
-            }
-
-        public void Choice()
+        public Converter(double usdx, double eurx, double rubx)
         {
-            Console.Write("How much grn do you have?:");
-
-            double grn = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("if you want convert grn into usd press - 1\ninto eur prees - 2\ninto rub press - 3\n");
-
-            Console.Write("If you want convert usd into grn press - 4\neur into grn press - 5\nrub into grn- 6\n>>>");
-
-            int pick = Convert.ToInt32(Console.ReadLine());
-
-            switch (pick)
-            {
-             
-                case 1:
-                    Console.Write($"You have: {Math.Round(grn / 27, 2)} usd\n");
-                return;
-
-                case 2:
-                    Console.Write($"You have: {Math.Round(grn / 30, 2)} eur\n");
-                break;
-
-                case 3:
-                    Console.Write($"You have: {Math.Round(grn * 3.3, 2)} rub\n");
-                break;
-
-                case 4:
-                    Console.Write("How much usd do you have?: ");
-
-                double usd = Convert.ToDouble(Console.ReadLine());
-
-                Console.WriteLine($"You have: {Math.Round(usd * 27, 2)} grn"); //At that moment I learned that it is possible to write
-                    break;                                    //WriteLine instead of \n like in C++
-
-                case 5:
-                    Console.Write("How much eur do you have?: ");
-
-                double eur = Convert.ToDouble(Console.ReadLine());
-
-                Console.Write($"You have: {Math.Round(eur * 30,2)} grn\n");
-                break;
-
-                case 6:
-                    Console.Write("How much rub do you have?: ");
-
-                double rub = Convert.ToDouble(Console.ReadLine());
-
-                Console.Write($"You have: {Math.Round(rub / 3.3, 2)} grn\n\n\n");
-
-                break;
-                default:
-
-                    Console.WriteLine("Wrong choice -_-");
-
-                    break;
-
-            } 
+            usd = usdx;
+            eur = eurx;
+            rub = rubx;
         }
+
+        public void Conver()
+        {
+            double grn_in_dol = Math.Round(grn / 28.5, 2);
+
+            double grn_in_eur = Math.Round(grn / 35.3, 2);
+
+            double grn_in_rub = Math.Round(grn * 3.32, 2);
+
+            double dol_in_grn = Math.Round(usd * 28.5, 2);
+
+            double eur_in_grn = Math.Round(eur * 35.3, 2);
+
+            double rub_in_grn = Math.Round(rub / 3.32, 2);
+
+            Console.WriteLine($"You have: {grn} grn");
+
+            Console.WriteLine($"This is: {grn_in_dol} in usd");
+
+            Console.WriteLine($"This is: {grn_in_eur} in eur");
+
+            Console.WriteLine($"This is: {grn_in_rub} in rub");
+
+            Console.WriteLine($"You have:{usd} this is {dol_in_grn} in  grn");
+
+            Console.WriteLine($"You have:{eur} this is {eur_in_grn} in grn");
+
+            Console.WriteLine($"You have:{rub} this is {rub_in_grn} in grn");
+        }
+
+        //public void Output()//
+        // { 
+        //   Console.WriteLine($"You have: {grn} grn");
+        //
+        //   Console.WriteLine($"This is: {grn_in_dol} in usd");
+        //
+        //   Console.WriteLine($"This is: {grn_in_eur} in eur");
+        //
+        //   Console.WriteLine($"This is: {grn_in_rub} in rub");
+        //
+        //   Console.WriteLine($"You have:{usd} this is {dol_in_grn} in  grn");
+        //
+        //   Console.WriteLine($"You have:{eur} this is {eur_in_grn} in grn");
+        //
+        //   Console.WriteLine($"You have:{rub} this is {rub_in_grn} in grn");
+        //
     }
 }

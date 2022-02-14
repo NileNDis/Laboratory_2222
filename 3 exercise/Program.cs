@@ -10,7 +10,7 @@ namespace _3_exercise
 
             Employee den = new Employee("Denis", " Danilenko");
 
-            den.Rozrahunok();
+            den.Calculate();
 
             den.Write();
 

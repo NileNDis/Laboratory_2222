@@ -10,10 +10,11 @@ namespace _3_exercise
     {
         private string first;
         private string last;
-        private string pos;
-        private int exp;
+        private string pos = "middle";
+        private int exp = 10;
         private int salary;
         private int tax = 20;
+
 
         public Employee(string firstName, string lastName)
         {
@@ -21,19 +22,20 @@ namespace _3_exercise
             last = lastName;
         }
 
-        public void Rozrahunok()
+        public void Calculate()
         {
-            if (pos == "junior" || pos == "Junior" && exp <= 1)
+
+           if (pos == "junior" || pos == "Junior")
             {
-                salary = 1000;
+                salary = (int)((int)500 * (exp * 0.2) * 0.80);
             }
-            else if (pos == "middle" || pos == "Middle" && exp <= 4 && 1 <= exp)
+            else if (pos == "middle" || pos == "Middle")
             {
-                salary = 3000;
+                salary = (int)((int)1000 * (exp * 0.4) * 0.80);
             }
-            else if (pos == "senior" || pos == "Senior" && 4 <= exp)
+            else if (pos == "senior" || pos == "Senior")
             {
-                salary = 5000;
+                salary = (int)((int)2000 * (exp * 0.6) * 0.80);
             }
             else
             {
