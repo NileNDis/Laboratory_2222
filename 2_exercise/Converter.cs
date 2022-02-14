@@ -49,7 +49,7 @@ namespace _2_exercise
             Console.WriteLine($"You have:{rub} this is {rub_in_grn} in grn");
         }
 
-        //public void Output()//
+        //public void Output()// не понял как устранить ошибку с (grn_in_dol и т.д)
         // { 
         //   Console.WriteLine($"You have: {grn} grn");
         //
