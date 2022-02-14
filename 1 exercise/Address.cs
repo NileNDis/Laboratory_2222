@@ -6,6 +6,7 @@ namespace _1_exercise
 {
     class Address
     {
+        adsda
         private int index;
         private string country;
         private string city;
